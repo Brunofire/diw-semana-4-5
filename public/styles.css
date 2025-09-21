@@ -10,19 +10,21 @@ img{
 }
 
 body{
-   
-    background-repeat:no-repeat;
+    background-color: black;
 }
-p h1 h2 h3 {
+
+#container  {
    color: white;
 }
 #container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows:auto;
+    grid-template-columns:1fr 1fr  ;
+    width: 100%;
+    
 }
 .item{
-    background-color: aqua;
+    height: 40%;
+    background-color:black;
     margin: 20px;
 }
 #container1 {
@@ -46,11 +48,38 @@ p h1 h2 h3 {
     flex-direction: column;
     align-items: center;
 }
-.card .kratos:hover{transform: translateY(-2%);
-    background-color: red;  
+.card:hover{
+    border: 8px solid red;
     transition: 2s;
+}
+
+.card .kratos {
+   
+    height: 100%;  /* define altura fixa */
+   
+}
+
+.card .kratos:hover{
+    content: url("/public/img/god\ of\ war\ gaming\ gif.gif"); 
+    width: 100%;
+    transform: translateY(-2%);
+    border: 8px solid red;
+    transition: 2s ease-in-out;;
     
 }
+.card .Hades:hover{
+    transform: translateY(-2%);
+    border: 8px solid black ;
+    transition: 2s;
+}
+.card .poseidon:hover{
+    transform: translateY(-2%);
+    border: 8px solid blue ;
+    transition: 2s;
+}
+.card .Zeus:hover{transform: translateY(-2%);
+    border: 8px solid gold ;
+    transition: 2s;}
 .card p{
     color: white;
     font-size: auto;
@@ -63,6 +92,153 @@ p h1 h2 h3 {
     border-radius: 20px;
     margin-bottom: 10%; 
 }
-@media screen {
-    
+.logo{
+    width: 30%;
+}
+.logo:hover{
+    transition: 2s;
+    border-radius: 100px;
+    background-color: aliceblue;
+}
+.barra_nav{
+    width: 30%;
+    margin: 1px;
+    border: 1;
+    display: flex;
+    list-style: none;
+    justify-content: space-between ;
+    gap:10%
+}
+button{
+    width: 60%;
+    display: block;
+    height: 10%;
+    align-content: center;
+    text-align: center;
+    border-radius: 30px;
+    color:white;
+    background-color: black;
+    justify-content: space-between 10%;
+}
+button:hover{
+    transition: 2s;
+    transform: matrix3d(10,30);
+    cursor: pointer;
+    transform: translateY(5px);  
+    color:red;
+    background-color:black;
+}
+header{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* ================= SMALL VIEWPORT (mobile até 767px) ================= */
+@media (max-width: 767px) {
+    body {
+        background-color: black;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column; /* menu em coluna */
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .barra_nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    button {
+        width: 80%;
+        padding: 10px;
+        border-radius: 20px;
+        border: 2px solid white;
+        background: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: 1fr; /* empilhado */
+        gap: 20px;
+        padding: 10px;
+    }
+
+    #container1 {
+        display: grid;
+        grid-template-columns: 1fr; /* cards em coluna */
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+}
+
+/* ================= MEDIUM VIEWPORT (768px – 1023px) ================= */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .barra_nav {
+        flex-direction: row;
+        width: auto;
+    }
+
+    #container {
+        grid-template-columns: 1fr 2fr; /* texto + imagem lado a lado */
+    }
+
+    #container1 {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards */
+    }
+}
+
+/* ================= LARGE VIEWPORT (1024px ou mais) ================= */
+@media (min-width: 1024px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    #container {
+        grid-template-columns: 0.5fr 2fr;
+    }
+
+    #container1 {
+        grid-template-columns: repeat(4, 1fr); /* 4 cards */
+    }
+
+    .card {
+        padding: 20px;
+    }
 }
