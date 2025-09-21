@@ -8,14 +8,14 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome:Bruno Henrique Guedes Da Cruz
+- Matricula:898113
+- Proposta de projeto escolhida:expositorio
+- Breve descrição sobre seu projeto:uma exposição sobre Deuses derivados de um jogo
 
 ## Print da versão responsiva com CSS puro
 
-<<  COLOQUE A IMAGEM AQUI >>
+<<  COLOQUE A IMAGEM AQUI >>![alt text](image.png)![alt text](image-1.png)![alt text](image-2.png)![alt text](image-3.png)
 
 ## Print da versão responsiva com Bootstrap
 
