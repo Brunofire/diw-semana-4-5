@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+img{
+    max-width: 60%;
+    max-height: 90%;
+    border-radius: 40px;
+}
+
+body{
+   
+    background-repeat:no-repeat;
+}
+p h1 h2 h3 {
+   color: white;
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows:auto;
+}
+.item{
+    background-color: aqua;
+    margin: 20px;
+}
+#container1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas iguais */
+    gap: 30px; /* espaço entre os cards */
+    padding: 20px; /* afastar do limite da tela */
+    justify-items: center; /* centraliza cada card */
+}
+
+.card {
+    background-position: center;
+    border: 8px solid #ccc;
+    background-image: url(img/b9c5cfac1b39fe3978478881a34ef25c.jpg) ;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    max-width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card .kratos:hover{transform: translateY(-2%);
+    background-color: red;  
+    transition: 2s;
+    
+}
+.card p{
+    color: white;
+    font-size: auto;
+}
+
+.card img {
+    border: 8px solid white;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 10%; 
+}
+@media screen {
+    
+}
