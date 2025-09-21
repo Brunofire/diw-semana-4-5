@@ -1,86 +1,104 @@
-*{
+* {
     margin: 0;
     padding: 0;
 
 }
-img{
+
+img {
     max-width: 60%;
     max-height: 90%;
     border-radius: 40px;
 }
 
-body{
+body {
     background-color: black;
 }
 
-#container  {
-   color: white;
+#container {
+    margin-top: 10%;
+    color: white;
 }
+
 #container {
     display: grid;
-    grid-template-columns:1fr 1fr  ;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
-    
+
 }
-.item{
+
+.item {
     height: 40%;
-    background-color:black;
+    background-color: black;
     margin: 20px;
 }
+
 #container1 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colunas iguais */
-    gap: 30px; /* espaço entre os cards */
-    padding: 20px; /* afastar do limite da tela */
-    justify-items: center; /* centraliza cada card */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 colunas iguais */
+    gap: 30px;
+    /* espaço entre os cards */
+    padding: 20px;
+    /* afastar do limite da tela */
+    justify-items: center;
+    /* centraliza cada card */
 }
 
 .card {
     background-position: center;
     border: 8px solid #ccc;
-    background-image: url(img/b9c5cfac1b39fe3978478881a34ef25c.jpg) ;
+    background-image: url(img/b9c5cfac1b39fe3978478881a34ef25c.jpg);
     background-repeat: no-repeat;
     border-radius: 10px;
     padding: 15px;
     text-align: center;
-    max-width: 100%; 
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.card:hover{
+
+.card:hover {
     border: 8px solid red;
     transition: 2s;
 }
 
 .card .kratos {
-   
-    height: 100%;  /* define altura fixa */
-   
+
+    height: 100%;
+    /* define altura fixa */
+
 }
 
-.card .kratos:hover{
-    content: url("/public/img/god\ of\ war\ gaming\ gif.gif"); 
+.card .kratos:hover {
+    content: url("/public/img/god\ of\ war\ gaming\ gif.gif");
     width: 100%;
     transform: translateY(-2%);
     border: 8px solid red;
-    transition: 2s ease-in-out;;
-    
+    transition: 2s ease-in-out;
+    ;
+
 }
-.card .Hades:hover{
+
+.card .Hades:hover {
     transform: translateY(-2%);
-    border: 8px solid black ;
+    border: 8px solid black;
     transition: 2s;
 }
-.card .poseidon:hover{
+
+.card .poseidon:hover {
     transform: translateY(-2%);
-    border: 8px solid blue ;
+    border: 8px solid blue;
     transition: 2s;
 }
-.card .Zeus:hover{transform: translateY(-2%);
-    border: 8px solid gold ;
-    transition: 2s;}
-.card p{
+
+.card .Zeus:hover {
+    transform: translateY(-2%);
+    border: 8px solid gold;
+    transition: 2s;
+}
+
+.card p {
     color: white;
     font-size: auto;
 }
@@ -90,109 +108,199 @@ body{
     width: 100%;
     height: auto;
     border-radius: 20px;
-    margin-bottom: 10%; 
+    margin-bottom: 10%;
 }
-.logo{
+
+.logo {
     width: 30%;
 }
-.logo:hover{
+
+.logo:hover {
     transition: 2s;
     border-radius: 100px;
     background-color: aliceblue;
 }
-.barra_nav{
+
+.barra_nav {
     width: 30%;
     margin: 1px;
     border: 1;
     display: flex;
     list-style: none;
-    justify-content: space-between ;
-    gap:10%
+    justify-content: space-between;
+    gap: 10%
 }
-button{
+
+button {
     width: 60%;
     display: block;
     height: 10%;
     align-content: center;
     text-align: center;
     border-radius: 30px;
-    color:white;
+    color: white;
     background-color: black;
     justify-content: space-between 10%;
 }
-button:hover{
+
+button:hover {
     transition: 2s;
-    transform: matrix3d(10,30);
+    transform: matrix3d(10, 30);
     cursor: pointer;
-    transform: translateY(5px);  
-    color:red;
-    background-color:black;
+    transform: translateY(5px);
+    color: red;
+    background-color: black;
 }
-header{
+
+header {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
 }
-/* ================= SMALL VIEWPORT (mobile até 767px) ================= */
-@media (max-width: 767px) {
-    body {
-        background-color: black;
-        font-family: Arial, sans-serif;
-        color: white;
-    }
 
-    header {
-        display: flex;
-        flex-direction: column; /* menu em coluna */
-        align-items: center;
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .logo {
-        width: 50%;
-    }
-
-    .barra_nav {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        list-style: none;
-        padding: 0;
-        width: 100%;
-        align-items: center;
-    }
-
-    button {
-        width: 80%;
-        padding: 10px;
-        border-radius: 20px;
-        border: 2px solid white;
-        background: black;
-        color: white;
-        cursor: pointer;
-    }
-
-    #container {
-        display: grid;
-        grid-template-columns: 1fr; /* empilhado */
-        gap: 20px;
-        padding: 10px;
-    }
-
-    #container1 {
-        display: grid;
-        grid-template-columns: 1fr; /* cards em coluna */
-        gap: 20px;
-        padding: 10px;
-    }
-
-    .card img {
-        width: 100%;
-        height: auto;
-        border-radius: 15px;
-    }
+/*menu mobile no desk*/
+#menuToggle {
+    display: none;
 }
+
+.menu-icon {
+    display: none;
+}
+
+/* ================= SMALL VIEWPORT (mobile até 767px) ================= */
+
+
+input {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header {
+
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.heaer nav {
+    display: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/b9c5cfac1b39fe3978478881a34ef25c.jpg);
+}
+
+.logo {
+    width: 50%;
+}
+
+.barra_nav {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    transition: height 0.4s;
+}
+
+.barra_nav li {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.barra_nav li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.menu-icon {
+    display: block;
+    color: white;
+    width: 50px;
+    height: inherit;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    line-height: 60px;
+    z-index: 999;
+}
+
+.menu-icon i {
+    font-size: 1.7rem;
+}
+
+#menuToggle:checked~label i:nth-child(2) {
+    display: block;
+}
+
+#menuToggle:checked~label i:first-child {
+    display: none;
+}
+
+#menuToggle:not(checked)~label i:first-child {
+    display: block;
+}
+
+#menuToggle:not(:checked)~label i:nth-child(2) {
+    display: none;
+}
+#menuToggle:checked ~ ul{
+    height: 100%;
+}
+
+
+button {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* empilhado */
+    gap: 20px;
+    padding: 10px;
+}
+
+#container1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* cards em coluna */
+    gap: 20px;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
 
 /* ================= MEDIUM VIEWPORT (768px – 1023px) ================= */
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -201,6 +309,26 @@ header{
         justify-content: space-between;
         padding: 15px 30px;
     }
+#menuToggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+.barra_nav {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    transition: height 0.4s;
+}
 
     .logo {
         width: 30%;
@@ -212,11 +340,13 @@ header{
     }
 
     #container {
-        grid-template-columns: 1fr 2fr; /* texto + imagem lado a lado */
+        grid-template-columns: 1fr 2fr;
+        /* texto + imagem lado a lado */
     }
 
     #container1 {
-        grid-template-columns: repeat(2, 1fr); /* 2 cards */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 cards */
     }
 }
 
@@ -225,6 +355,31 @@ header{
     header {
         padding: 20px 50px;
     }
+    #menuToggle {
+    display: none;
+}
+.barra_nav li{
+    color: white;
+}
+.barra_nav {
+    color: white;
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    transition: height 0.4s;
+}
+
+.menu-icon {
+    display: none;
+}
+
 
     .logo {
         width: 20%;
@@ -235,7 +390,8 @@ header{
     }
 
     #container1 {
-        grid-template-columns: repeat(4, 1fr); /* 4 cards */
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 cards */
     }
 
     .card {

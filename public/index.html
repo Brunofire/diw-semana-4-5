@@ -6,31 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
 <body>
-    <header>
+    <header class="header">
         <img class="logo" src="img/logo.png" alt="">
-        <ul class="barra_nav">
-            <button class="">
-                <li>Menu</li>
-            </button>
-            <button>
-                <li>Home</li>
-            </button>
-            <button>
-                <li>Historias</li>
-            </button>
-            <button>
-                <li>Sobre</li>
-            </button>
-        </ul>
+        <nav>
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+                <i class="fa-solid fa-snowflake"></i>
+                <i class="fa fa-times-circle"></i>
+            </label>
+            <ul class="barra_nav">
+                <li><a href="">Menu</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Historias</a></li>
+                <li><a href="">Sobre </a></li>
+            </ul>
+        </nav>
 
-        <form class="login" name="form-login" action="do_login.html" method="post">
-            <p>Login:<input type="text" name="Login" value=""></p><br />
-            <p>Senha: <input type="password" name="senha" value=""></p></br>
-            <p><input class="button" type="submit" value="OK"></p>
-        </form>
+       
     </header>
     <div id="container">
         <div class="item">
