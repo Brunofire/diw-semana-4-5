@@ -158,13 +158,66 @@ header {
     flex-wrap: wrap;
 }
 
-/*menu mobile no desk*/
-#menuToggle {
-    display: none;
+.barra_nav {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    transition: height 0.4s;
+}
+
+.barra_nav li {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.barra_nav li a {
+    display: block;
+    text-align: center;
+    width: 100%;
 }
 
 .menu-icon {
+    display: block;
+    color: white;
+    width: 50px;
+    height: inherit;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    line-height: 60px;
+    z-index: 999;
+}
+
+.menu-icon i {
+    font-size: 1.7rem;
+}
+
+#menuToggle:checked~label i:nth-child(2) {
+    display: block;
+}
+
+#menuToggle:checked~label i:first-child {
     display: none;
+}
+
+#menuToggle:not(checked)~label i:first-child {
+    display: block;
+}
+
+#menuToggle:not(:checked)~label i:nth-child(2) {
+    display: none;
+}
+#menuToggle:checked ~ ul{
+    height: 100%;
 }
 
 /* ================= SMALL VIEWPORT (mobile até 767px) ================= */
@@ -309,13 +362,7 @@ button {
         justify-content: space-between;
         padding: 15px 30px;
     }
-#menuToggle {
-    display: none;
-}
 
-.menu-icon {
-    display: none;
-}
 .barra_nav {
     display: flex;
     position: fixed;
@@ -348,6 +395,113 @@ button {
         grid-template-columns: repeat(2, 1fr);
         /* 2 cards */
     }
+.heaer nav {
+    display: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/b9c5cfac1b39fe3978478881a34ef25c.jpg);
+}
+
+.logo {
+    width: 50%;
+}
+
+.barra_nav {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    transition: height 0.4s;
+}
+
+.barra_nav li {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.barra_nav li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.menu-icon {
+    display: block;
+    color: white;
+    width: 50px;
+    height: inherit;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    line-height: 60px;
+    z-index: 999;
+}
+
+.menu-icon i {
+    font-size: 1.7rem;
+}
+
+#menuToggle:checked~label i:nth-child(2) {
+    display: block;
+}
+
+#menuToggle:checked~label i:first-child {
+    display: none;
+}
+
+#menuToggle:not(checked)~label i:first-child {
+    display: block;
+}
+
+#menuToggle:not(:checked)~label i:nth-child(2) {
+    display: none;
+}
+#menuToggle:checked ~ ul{
+    height: 100%;
+}
+
+
+button {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* empilhado */
+    gap: 20px;
+    padding: 10px;
+}
+
+#container1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* cards em coluna */
+    gap: 20px;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
 }
 
 /* ================= LARGE VIEWPORT (1024px ou mais) ================= */
@@ -355,12 +509,8 @@ button {
     header {
         padding: 20px 50px;
     }
-    #menuToggle {
-    display: none;
-}
-.barra_nav li{
-    color: white;
-}
+
+
 .barra_nav {
     color: white;
     display: flex;
@@ -396,5 +546,9 @@ button {
 
     .card {
         padding: 20px;
+    }
+    .barra_nav{
+        color: white;
+        background-color: white;
     }
 }
