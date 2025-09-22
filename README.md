@@ -13,11 +13,12 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 - Proposta de projeto escolhida:expositorio
 - Breve descrição sobre seu projeto:uma exposição sobre Deuses derivados de um jogo
 
-## Print da versão responsiva com CSS puro
+## Print da versão responsiva com CSS puro[desktop]
 
 <<  COLOQUE A IMAGEM AQUI >>![alt text](image.png)![alt text](image-1.png)![alt text](image-2.png)![alt text](image-3.png)
+## Print da versão responsiva com CSS puro[mobile]
 parte nova
 ![alt text](image-8.png)![alt text](image-9.png)![alt text](image-10.png)
 ## Print da versão responsiva com Bootstrap
-
+![![alt text](image-12.png)](image-11.png)![alt text](image-13.png)
 <<  COLOQUE A IMAGEM AQUI >>
